@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/choices.min.css" />
+    <link rel="stylesheet" href="styles/style-multiselect.css" />
+
+
+  </head>
+  <body>
+
+    <form action="#" class="calculator-form">
+      <div class="calculator-form-input">
+        <label for="calculator-form-website-type" class="calculator-form-title"
+          >What should be done:</label
+        >
+        <select
+          name="website-type"
+          id="calculator-form-website-type"
+          class="calculator-form-select"
+        >
+          <option value="landing-page:500$">Landing page</option>
+          <option value="website:300$">Website</option>
+          <option value="cms:2000$" selected="selected">CMS</option>
+          <option value="portal:3000$">Portal</option>
+          <option value="e-shop:1000$">E-shop</option>
+        </select>
+      </div>
+
+      <div class="calculator-form-input">
+        <label for="calculator-form-technologies" class="calculator-form-title"
+          >Choose preferred technologies</label
+        >
+        <select
+          name="technologies"
+          id="calculator-form-technologies"
+          class="calculator-form-select"
+          multiple
+        >
+          <option value="CSS:500$" selected="selected">CSS</option>
+          <option value="HTML:300$" selected="selected">HTML</option>
+          <option value="JS:500$">JS</option>
+          <option value="React:600$">React</option>
+          <option value="Angular:500$">Angular</option>
+          <option value="PHP:800$">PHP</option>
+        </select>
+      </div>
+
+      <div class="calculator-form-input">
+        <label for="" class="calculator-form-title"
+          >Personal account and shopping cart:</label
+        >
+
+        <div
+          class="calculator-form-input-radio-container"
+          id="calculator-form-shopping-cart"
+        >
+          <input
+            type="radio"
+            class="calculator-form-input-field"
+            id="calculator-form-input-cart-yes"
+            name="cart"
+            value="Yes"
+            checked
+          />
+          <label
+            for="calculator-form-input-cart-yes"
+            class="calculator-form-input-label"
+            >Yes</label
+          >
+
+          <input
+            type="radio"
+            class="calculator-form-input-field"
+            id="calculator-form-input-cart-no"
+            name="cart"
+            value="No"
+          />
+          <label
+            for="calculator-form-input-cart-yes"
+            class="calculator-form-input-label"
+            >No</label
+          >
+        </div>
+      </div>
+
+      <div class="calculator-form-input">
+        <label for="" class="calculator-form-title"
+          >Requests reception on your email:</label
+        >
+
+        <div
+          class="calculator-form-input-radio-container"
+          id="calculator-form-email"
+        >
+          <input
+            type="radio"
+            class="calculator-form-input-field"
+            id="calculator-form-input-reception-yes"
+            name="reception"
+            value="Yes"
+            checked
+          />
+          <label
+            for="calculator-form-input-cart-yes"
+            class="calculator-form-input-label"
+            >Yes</label
+          >
+
+          <input
+            type="radio"
+            class="calculator-form-input-field"
+            id="calculator-form-input-reception-no"
+            name="reception"
+            value="No"
+          />
+          <label
+            for="calculator-form-input-cart-yes"
+            class="calculator-form-input-label"
+            >No</label
+          >
+        </div>
+      </div>
+
+      <div class="calculator-form-input">
+        <p class="calculator-form-total">Cost:</p>
+        <p class="calculator-form-total-cost">0</p>
+      </div>
+
+      <input type="submit" value="Find out the cost  —" class="accent-btn" />
+    </form>
+
+    <script src="js/choices.min.js"></script>
+    <script src="js/calculator.js"></script>
+  </body>
+</html>
