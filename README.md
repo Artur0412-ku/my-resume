@@ -1,2 +1,2 @@
-# my-resume
-Resume about me
+# My-resume
+ 
